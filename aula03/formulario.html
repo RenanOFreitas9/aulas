@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Dados</title>
+    <script>
+        function coletarDados() {
+            let nome = prompt("Digite seu nome:");
+            let idade = prompt("Digite sua idade:");
+            let email = prompt("Digite seu e-mail:");
+
+            let compilado = "Olá" + nome + ",\nNome: " + nome + ",\nIdade: " + idade + "\nE-mail: " + email;
+
+            console.log("Dados inseridos:\n" + compilado);
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="Enviar" onclick="coletarDados()">
+</body>
+</html>
